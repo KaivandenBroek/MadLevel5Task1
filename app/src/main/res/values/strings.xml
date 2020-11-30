@@ -10,5 +10,5 @@
     <string name="my_notepad">My Notepad</string>
     <string name="title_note">Title</string>
     <string name="note_note">Note</string>
-    <string name="last_updated">Last updated:</string>
+    <string name="last_updated">Last updated: %1$s</string>
 </resources>

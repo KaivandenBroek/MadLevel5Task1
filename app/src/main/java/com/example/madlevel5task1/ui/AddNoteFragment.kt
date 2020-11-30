@@ -37,15 +37,10 @@ class AddNoteFragment : Fragment() {
         }
 
         observeNote()
-
-        view.findViewById<Button>(R.id.btnSave).setOnClickListener {
-            findNavController().navigate(R.id.action_addNoteFragment_to_notepadFragment)
-        }
     }
 
-
     private fun observeNote() {
-//fill the text fields with the current text and title from the viewmodel
+    //fill the text fields with the current text and title from the viewmodel
         viewModel.note.observe(viewLifecycleOwner, Observer {
             note  ->
             note?.let {
